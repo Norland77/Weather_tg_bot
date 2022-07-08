@@ -42,10 +42,9 @@ const StartPars = async (chatID, city) => {
 bot.on('message', msg => {
     let city = msg.text;
     const chatID = msg.chat.id;
-    //bot.sendMessage(chatID, "Hello")
-    StartPars(chatID, city);
-    
-
+    if (city != "/start"){
+        StartPars(chatID, city);
+    }
 })
 
 
