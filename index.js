@@ -43,6 +43,7 @@ bot.on('message', msg => {
     let city = msg.text;
     const chatID = msg.chat.id;
     if (city != "/start"){
+        bot.sendMessage(chatID, "Loading...");
         StartPars(chatID, city);
     }
 })
