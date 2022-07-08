@@ -1,4 +1,4 @@
-const token = '5544295654:AAG1DzchmVpgoBCkEOYudnPUyyMLMwm1PZ8'
+const token = '5498036441:AAHtB67R7s9_HUR54RfWni65ri33L1IdSQ0'
 const telegramApi = require('node-telegram-bot-api');
 const bot = new telegramApi(token, {polling: true});
 const puppeteer = require('puppeteer');
