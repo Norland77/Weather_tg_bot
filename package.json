@@ -14,5 +14,8 @@
     "puppeteer": "^15.3.1",
     "require": "^2.4.20",
     "telegram-bot-api": "^2.0.1"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
