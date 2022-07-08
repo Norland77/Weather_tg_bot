@@ -1,4 +1,4 @@
-const token = '5498036441:AAHtB67R7s9_HUR54RfWni65ri33L1IdSQ0'
+const token = '5544295654:AAE_nuO4sA5UqwMaEfA3IZ2XKvjQjglcHz0'
 const telegramApi = require('node-telegram-bot-api');
 const bot = new telegramApi(token, {polling: true});
 const puppeteer = require('puppeteer');
@@ -33,7 +33,7 @@ const StartPars = async (chatID, city) => {
     }))
     await browser.close();
     console.log("Closing the browser......");
-} 
+}
 
 //! на текущее время
 //*https://api.openweathermap.org/data/2.5/weather?q=Kiev&units=metric&appid=ec748d764642a636a5e61260d5043a2b
@@ -43,9 +43,11 @@ bot.on('message', msg => {
     let city = msg.text;
     const chatID = msg.chat.id;
     if (city != "/start"){
-        bot.sendMessage(chatID, "Loading...");
+        bot.sendMessage(chatID, "Loading...")
         StartPars(chatID, city);
     }
 })
+
+
 
 
