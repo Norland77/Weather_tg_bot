@@ -1,3 +1,5 @@
+process.env.NTBA_FIX_319 = 1;
+
 const token = '5544295654:AAE_nuO4sA5UqwMaEfA3IZ2XKvjQjglcHz0'
 const telegramApi = require('node-telegram-bot-api');
 const bot = new telegramApi(token, {polling: true});
